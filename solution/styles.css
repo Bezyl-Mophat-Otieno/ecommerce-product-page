@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Kumbh Sans', sans-serif;
+    overflow-y: scroll;
+
+}
+.mainContainer{
+    height: 80vh;
+    width: 90vw;
+    background-color:hsl(223, 64%, 98%)
+;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 'nav nav nav ' 'hero desc cart' ;
+    gap:50px;
+}
+
+.navContainer{
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    background-color:hsl(223, 64%, 98%);
+    color: black;
+    grid-area: nav;
+
+}
+
+.nav {
+    /* Styles for the container */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 10px;
+  }
+  
+  .nav-links li:last-child {
+    margin-right: 0;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color:black;
+  }
+  .profileContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .cart{
+    width: 50px;
+    height: 50px;
+    margin-top: 2px;
+    border-radius: 50%;
+  }
+  .pic{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+.heroContainer{
+    grid-area: hero;
+    display: flex;
+    flex-direction: column;
+
+}
+.heroImage{
+    width:100%;
+    height:80%;
+    border-radius: 10px;
+}
+.relatedImages{
+    margin-top: 30px;
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+   
+}
+.relatedImages img{
+    width: 20%;
+    height: 100%;
+    border-radius: 10px;
+    border:2px solid  hsl(26, 100%, 55%)
+}
+
+.descContainer{
+    color: black;
+    grid-area: desc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+
+}
+.header{
+    color: hsl(26, 100%, 55%);
+
+}
+.productDesc{
+    margin-top: 20px;
+}
+.price{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.priceFlex{
+    display: flex;
+    gap: 10px;
+}
+.amount{
+    font-weight: bold;
+    font-size: 20px;
+}
+.percentage{
+    color: hsl(26, 100%, 55%);
+}
+.prevPrice{
+    text-decoration: line-through;
+    color: gray;
+    font-size: 15px;
+}
+.descFooter{
+    display: flex;
+    flex-direction: column;
+}
+
+.cartContainer{
+    background-color: purple;
+    grid-area: cart;
+
+
+}
+
