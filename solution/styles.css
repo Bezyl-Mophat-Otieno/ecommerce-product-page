@@ -19,7 +19,7 @@ body{
     background-color:hsl(223, 64%, 98%)
 ;
     display:grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     grid-template-areas: 'nav nav nav ' 'hero desc cart' ;
     gap:50px;
 }
@@ -158,6 +158,18 @@ body{
     width: 10px;
     height: 5px; 
 }
+.cartBtn{
+    display: flex;
+    gap: 30px;
+}
+.cartBtn img{
+    width: 20px;
+    height: 20px;
+  
+}
+.btnText{
+    color: white;
+}
 .addCart{
     border-radius: 15px;
     width: 150px;
@@ -165,7 +177,7 @@ body{
     margin-top: 20px;
     border: none;
     border-radius: 3px;
-    background-color:  rgb(255, 125, 26,0.5);;
+    background-color:  rgb(255, 125, 26,0.6);;
 }
 
 .cartContainer{
