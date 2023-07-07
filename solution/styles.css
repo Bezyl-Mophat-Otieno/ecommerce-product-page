@@ -142,11 +142,33 @@ body{
 }
 .descFooter{
     display: flex;
-    flex-direction: column;
+    gap: 10px;
+}
+.pagination{
+    border-radius: 20px;
+    display: flex;
+    margin-top: 20px;
+    background-color:hsl(213, 5%, 66%);
+    width: 100px;
+    height: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.pagination img{
+    width: 10px;
+    height: 5px; 
+}
+.addCart{
+    border-radius: 15px;
+    width: 150px;
+    height: 30px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 3px;
+    background-color:  rgb(255, 125, 26,0.5);;
 }
 
 .cartContainer{
-    background-color: purple;
     grid-area: cart;
 
 
