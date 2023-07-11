@@ -16,19 +16,18 @@ body{
 .mainContainer{
     height: 80vh;
     width: 90vw;
-    background-color:hsl(223, 64%, 98%)
+    background-color:white;
 ;
     display:grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-areas: 'nav nav nav ' 'hero desc cart' ;
-    gap:50px;
+    gap:100px;
 }
 
 .navContainer{
     display: flex;
-    height: auto;
     justify-content: space-between;
-    background-color:hsl(223, 64%, 98%);
+    background-color:white;
     color: black;
     grid-area: nav;
 
@@ -38,13 +37,14 @@ body{
     /* Styles for the container */
     display: flex;
     justify-content: center;
-  }
-  
-  .nav-links {
+}
+
+.nav-links {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
+    gap: 2vw;
   }
   
   .nav-links li {
@@ -62,17 +62,21 @@ body{
   .profileContainer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-right: 10vw;
   }
   .cart{
-    width: 50px;
-    height: 50px;
+    width: 3vw;
+    height: 4vh;
     margin-top: 2px;
-    border-radius: 50%;
+    border-radius: 20%;
+    object-fit: contain;
   }
   .pic{
-    width: 50px;
-    height: 50px;
+    width: 3vw;
+    height: 4vh;
     border-radius: 50%;
+    object-fit: contain;
   }
 
 .heroContainer{
@@ -82,21 +86,23 @@ body{
 
 }
 .heroImage{
-    width:100%;
-    height:80%;
+    width:30vw;
+    height:70vh;
     border-radius: 10px;
 }
 .relatedImages{
+    width:30vw;
     margin-top: 30px;
-    gap: 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 30px;
    
 }
 .relatedImages img{
-    width: 20%;
-    height: 100%;
+    object-fit: fit;
+    width: 5vw;
+    height: 10vh;
     border-radius: 10px;
     border:2px solid  hsl(26, 100%, 55%)
 }
@@ -112,10 +118,16 @@ body{
 }
 .header{
     color: hsl(26, 100%, 55%);
+    font-weight: bold;
 
+}
+.productName{
+    font-size: 50px;
+    font-weight: bold;
 }
 .productDesc{
     margin-top: 20px;
+    line-height: 30px;
 }
 .price{
     margin-top: 20px;
@@ -134,6 +146,12 @@ body{
 }
 .percentage{
     color: hsl(26, 100%, 55%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5px 5px;
+    background-color: rgb(255, 125, 26,0.1);
 }
 .prevPrice{
     text-decoration: line-through;
@@ -145,26 +163,29 @@ body{
     gap: 10px;
 }
 .pagination{
-    border-radius: 20px;
+    border-radius: 10px;
     display: flex;
     margin-top: 20px;
-    background-color:hsl(213, 5%, 66%);
-    width: 100px;
-    height: 30px;
+    background-color:rgb(222, 224, 227,0.3);
+    width: 10vw;
+    height: 7vh;
     justify-content: space-evenly;
     align-items: center;
 }
 .pagination img{
-    width: 10px;
-    height: 5px; 
+    width: 8px;
+    height: px; 
 }
 .cartBtn{
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 30px;
 }
 .cartBtn img{
-    width: 20px;
-    height: 20px;
+ 
+    font-size: 30px;
+
   
 }
 .btnText{
@@ -172,17 +193,16 @@ body{
 }
 .addCart{
     border-radius: 15px;
-    width: 150px;
-    height: 30px;
+    width: 15vw;
+    height: 7vh;
     margin-top: 20px;
     border: none;
     border-radius: 3px;
-    background-color:  rgb(255, 125, 26,0.6);;
+    background-color:  rgb(255, 125, 26);;
 }
 
 .cartContainer{
     grid-area: cart;
-
 
 }
 
